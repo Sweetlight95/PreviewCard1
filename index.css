@@ -18,6 +18,10 @@ body {
     margin-top: 1rem;
 
 }
+.btn1:hover {
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+}
 .btn2{
     border-radius: 5rem;
     width: 7rem;
@@ -26,7 +30,10 @@ body {
     border: 2px solid white;
     color: white;
     margin-top: 1rem;
-
+}
+.btn2:hover{
+    background-color: white;
+    color: hsl(184, 100%, 22%);
 }
 .btn3 {
     border-radius: 5rem;
@@ -37,14 +44,19 @@ body {
     color: white;
     margin-top: 1rem;
 }
+.btn3:hover {
+    background-color: white;
+    color:hsl(179, 100%, 13%);
+}
 .sedans {
     background-color: hsl(31, 77%, 52%);
     height: 50vh;
     width: 140vw;
     padding: 2rem 2rem;
     border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem
 }
+
 .suvs{
     background-color: hsl(184, 100%, 22%);
     height: 50vh;
@@ -70,4 +82,26 @@ h3 {
     color: white;
     margin-top: 1rem;
     font-size: 1.3rem;
+}
+
+@media (max-width:812px) {
+    .cars{
+        flex-direction: column;
+        margin: 90px 0rem;
+    }
+    .sedans, .suvs, .luxury{
+        height: 45vh;
+        width: 40vw;
+    }
+    .sedans{
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+        border-bottom-left-radius: 0rem;
+    }
+    .luxury{
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+        border-top-right-radius: 0rem;
+    }
+ 
 }
